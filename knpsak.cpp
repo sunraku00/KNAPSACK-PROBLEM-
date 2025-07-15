@@ -22,14 +22,14 @@ int main() {
     cout << "Kapasitas maksimal knapsack: 15" << endl << endl;
     
    vector<Item> items = {
-        {2, 20, 0, 1},   // Digit ke-1 = 2
-        {3, 30, 0, 2},   // Digit ke-2 = 3
-        {5, 50, 0, 3},   // Digit ke-3 = 5
-        {3, 30, 0, 4},   // Digit ke-4 = 3
-        {3, 30, 0, 5},   // Digit ke-5 = 3
-        {7, 70, 0, 6},   // Digit ke-6 = 7
-        {8, 80, 0, 7},   // Digit ke-7 = 8
-        {11, 110, 0, 8}  // Digit ke-8 = 0 (diubah menjadi 11)
+        {2, 20, 0, 1},   
+        {3, 30, 0, 2},   
+        {5, 50, 0, 3},   
+        {3, 30, 0, 4},   
+        {3, 30, 0, 5},   
+        {7, 70, 0, 6},   
+        {8, 80, 0, 7},   
+        {11, 110, 0, 8}  
     };
     
     int capacity = 15;
