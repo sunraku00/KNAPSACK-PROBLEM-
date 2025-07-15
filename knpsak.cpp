@@ -21,8 +21,7 @@ int main() {
     cout << "NIM: 23533780 (angka 0 diganti dengan 11)" << endl;
     cout << "Kapasitas maksimal knapsack: 15" << endl << endl;
     
-    // Data berdasarkan digit NIM -> weight = digit NIM, profit bebas (pakai digit * 10)
-    vector<Item> items = {
+   vector<Item> items = {
         {2, 20, 0, 1},   // Digit ke-1 = 2
         {3, 30, 0, 2},   // Digit ke-2 = 3
         {5, 50, 0, 3},   // Digit ke-3 = 5
@@ -35,12 +34,10 @@ int main() {
     
     int capacity = 15;
     
-    // Hitung rasio profit/weight
     for (int i = 0; i < items.size(); i++) {
         items[i].ratio = (double)items[i].profit / items[i].weight;
     }
-    
-    // Urutkan berdasarkan rasio (descending)
+
     sort(items.begin(), items.end(), compare);
     
     cout << "Tabel item setelah diurutkan berdasarkan rasio profit/weight:" << endl;
